@@ -1,5 +1,5 @@
 object luisa {
-	var personajeActivo = 
+	var personajeActivo = mario
 	
 }
 
@@ -17,8 +17,8 @@ object floki {
 		
 	}
 	method encontrar(elemento) {
-		if (arma.estaCargada()) {
-			
+		if (armaActual.estaCargada() and elemento == castillo) {
+			return castillo.nivelDeDefensa() - castillo.nivelDeDefensa()
 		}
 	}
 }
@@ -26,6 +26,10 @@ object floki {
 
 object mario {
 	var valorRecolectado = 0
+	
+	method encontrar (elemento){
+		
+	}
 
 }
 
@@ -42,7 +46,7 @@ object jabalina {
 }
 
 object castillo {
-	
+	nivelDeDefensa = 150
 }
 
 object aurora {
